@@ -10,8 +10,14 @@ namespace modul4KPL_1302201135
     {
         static void Main(string[] args)
         {
-            Penjumlahan<double> data = new Penjumlahan<double>();
-            data.JumlahTigaAngka(13, 02, 20);
+            SimpleDataBase<double> dataBaru = new SimpleDataBase<double>();
+            dataBaru.SimpleDatabase();
+            dataBaru.AddNewData(13);
+            dataBaru.AddNewData(02);
+            dataBaru.AddNewData(20);
+            dataBaru.PrintAllData();
+
+
         }
     }
 }
